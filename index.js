@@ -1,13 +1,19 @@
-// #1-8. Data Types
-// String
-const what = "SHIFT";
-console.log(what);
+// #1-9. Organizing Data with Arrays
+const str = "string";
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, 0, false, str];
 
-// Boolean true(1) false(0)
-const wat = false;
+console.log(daysOfWeek);
+console.log(daysOfWeek[0]);
 
-// Number
-const num = 666;
+// #1-10. Organizing Data with Objects
+const myInfo = {
+  name:"Daeun",
+  age:23,
+  gender:"Female"
+}
 
-// Float
-const float = 55.1;
+console.log(myInfo);
+console.log(myInfo.age);
+
+// Combine Arrays & Objects
+// 배열 안에 객체 or 객체 안에 배열 가능!
