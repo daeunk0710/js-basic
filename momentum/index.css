@@ -1,8 +1,5 @@
 body{
   background-color: tomato;
-}
-
-h1{
   color:#fab1a0;
   transition: color 0.5s ease-in-out;
 }
