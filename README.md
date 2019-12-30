@@ -123,3 +123,32 @@ document 객체를 지정하는 방법
     title.style.color = "blue";
   }
   title.addEventListener("click", handleClick);
+
+### #2-5. If, else, and, or
+- 비교연산자 === > <
+- 논리연산자 && || !
+
+### #2-6. DOM If else Function practice 1
+클릭 이벤트마다 글씨색 바꾸는 코드
+
+\`const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#fab1a0";
+
+function handleClick(){
+  const currentColor = title.style.color;
+  console.log(currentColor);
+  if (currentColor === BASE_COLOR){
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init(){
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick);
+}
+
+init();\`
