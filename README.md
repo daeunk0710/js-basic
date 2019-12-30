@@ -98,166 +98,28 @@ DOM(Document Object Model)!
 ex. title.innerHTML() 함수로 title 객체의 내용을 변경
 
 ### #2-3. Modifying the DOM with JS
-console.dir(title) -> title 객체로 할 수 있는 모든 걸
+console.dir(title) -> title 객체로 할 수 있는 모든 걸 보여줌
 
-  h1#title
-  align: ""
-  title: ""
-  lang: ""
-  translate: true
-  dir: ""
-  hidden: false
-  accessKey: ""
-  draggable: false
-  spellcheck: true
-  autocapitalize: ""
-  contentEditable: "inherit"
-  isContentEditable: false
-  inputMode: ""
-  offsetParent: body
-  offsetTop: 21
-  offsetLeft: 8
-  offsetWidth: 1270
-  offsetHeight: 43
-  style: CSSStyleDeclaration {alignContent: "", alignItems: "", alignSelf: "", alignmentBaseline: "", all: "", …}
-  innerText: "Hi! From JS"
-  outerText: "Hi! From JS"
-  oncopy: null
-  oncut: null
-  onpaste: null
-  onabort: null
-  onblur: null
-  oncancel: null
-  oncanplay: null
-  oncanplaythrough: null
-  onchange: null
-  onclick: null
-  onclose: null
-  oncontextmenu: null
-  oncuechange: null
-  ondblclick: null
-  ondrag: null
-  ondragend: null
-  ondragenter: null
-  ondragleave: null
-  ondragover: null
-  ondragstart: null
-  ondrop: null
-  ondurationchange: null
-  onemptied: null
-  onended: null
-  onerror: null
-  onfocus: null
-  oninput: null
-  oninvalid: null
-  onkeydown: null
-  onkeypress: null
-  onkeyup: null
-  onload: null
-  onloadeddata: null
-  onloadedmetadata: null
-  onloadstart: null
-  onmousedown: null
-  onmouseenter: null
-  onmouseleave: null
-  onmousemove: null
-  onmouseout: null
-  onmouseover: null
-  onmouseup: null
-  onmousewheel: null
-  onpause: null
-  onplay: null
-  onplaying: null
-  onprogress: null
-  onratechange: null
-  onreset: null
-  onresize: null
-  onscroll: null
-  onseeked: null
-  onseeking: null
-  onselect: null
-  onstalled: null
-  onsubmit: null
-  onsuspend: null
-  ontimeupdate: null
-  ontoggle: null
-  onvolumechange: null
-  onwaiting: null
-  onwheel: null
-  onauxclick: null
-  ongotpointercapture: null
-  onlostpointercapture: null
-  onpointerdown: null
-  onpointermove: null
-  onpointerup: null
-  onpointercancel: null
-  onpointerover: null
-  onpointerout: null
-  onpointerenter: null
-  onpointerleave: null
-  onselectstart: null
-  onselectionchange: null
-  onanimationend: null
-  onanimationiteration: null
-  onanimationstart: null
-  ontransitionend: null
-  dataset: DOMStringMap {}
-  nonce: ""
-  autofocus: false
-  tabIndex: -1
-  enterKeyHint: ""
-  onformdata: null
-  onpointerrawupdate: null
-  namespaceURI: "http://www.w3.org/1999/xhtml"
-  prefix: null
-  localName: "h1"
-  tagName: "H1"
-  id: "title"
-  className: ""
-  classList: DOMTokenList [value: ""]
-  slot: ""
-  part: DOMTokenList [value: ""]
-  attributes: NamedNodeMap {0: id, id: id, length: 1}
-  shadowRoot: null
-  assignedSlot: null
-  innerHTML: "Hi! From JS"
-  outerHTML: "<h1 id="title">Hi! From JS</h1>"
-  scrollTop: 0
-  scrollLeft: 0
-  scrollWidth: 1270
-  scrollHeight: 43
-  clientTop: 0
-  clientLeft: 0
-  clientWidth: 1270
-  clientHeight: 43
-  attributeStyleMap: StylePropertyMap {size: 0}
-  onbeforecopy: null
-  onbeforecut: null
-  onbeforepaste: null
-  onsearch: null
-  elementTiming: ""
-  previousElementSibling: null
-  nextElementSibling: script
-  children: HTMLCollection []
-  firstElementChild: null
-  lastElementChild: null
-  childElementCount: 0
-  onfullscreenchange: null
-  onfullscreenerror: null
-  onwebkitfullscreenchange: null
-  onwebkitfullscreenerror: null
-  nodeType: 1
-  nodeName: "H1"
-  baseURI: "file:///C:/Users/lg/Documents/Git/js-basic/index.html"
-  isConnected: true
-  ownerDocument: document
-  parentNode: body
-  parentElement: body
-  childNodes: NodeList [text]
-  firstChild: text
-  lastChild: text
-  previousSibling: text
-  nextSibling: text
-  nodeValue: null
-  textContent: "Hi! From JS"
-  __proto__: HTMLHeadingElement
+  h1#title align: "" title: "" lang: "" translate: true dir: "" hidden: false accessKey: "" draggable: false spellcheck: true autocapitalize: "" contentEditable: "inherit" isContentEditable: false inputMode: "" offsetParent: body offsetTop: 21 offsetLeft: 8 offsetWidth: 1270 offsetHeight: 43 style: CSSStyleDeclaration {alignContent: "", alignItems: "", alignSelf: "", alignmentBaseline: "", all: "", …} innerText: "Hi! From JS" outerText: "Hi! From JS" oncopy: null oncut: null onpaste: null onabort: null onblur: null oncancel: null oncanplay: null oncanplaythrough: null onchange: null onclick: null onclose: null oncontextmenu: null oncuechange: null ondblclick: null ondrag: null ondragend: null ondragenter: null ondragleave: null ondragover: null ondragstart: null ondrop: null ondurationchange: null onemptied: null onended: null onerror: null onfocus: null oninput: null oninvalid: null onkeydown: null onkeypress: null onkeyup: null onload: null onloadeddata: null onloadedmetadata: null onloadstart: null onmousedown: null onmouseenter: null onmouseleave: null onmousemove: null onmouseout: null onmouseover: null onmouseup: null onmousewheel: null onpause: null onplay: null onplaying: null onprogress: null onratechange: null onreset: null onresize: null onscroll: null onseeked: null onseeking: null onselect: null onstalled: null onsubmit: null onsuspend: null ontimeupdate: null ontoggle: null onvolumechange: null onwaiting: null onwheel: null onauxclick: null ongotpointercapture: null onlostpointercapture: null onpointerdown: null onpointermove: null onpointerup: null onpointercancel: null onpointerover: null onpointerout: null onpointerenter: null onpointerleave: null onselectstart: null onselectionchange: null onanimationend: null onanimationiteration: null onanimationstart: null ontransitionend: null dataset: DOMStringMap {} nonce: "" autofocus: false tabIndex: -1 enterKeyHint: "" onformdata: null onpointerrawupdate: null namespaceURI: "http://www.w3.org/1999/xhtml" prefix: null localName: "h1" tagName: "H1" id: "title" className: "" classList: DOMTokenList [value: ""] slot: "" part: DOMTokenList [value: ""] attributes: NamedNodeMap {0: id, id: id, length: 1} shadowRoot: null assignedSlot: null innerHTML: "Hi! From JS" outerHTML: "Hi! From JS" scrollTop: 0 scrollLeft: 0 scrollWidth: 1270 scrollHeight: 43 clientTop: 0 clientLeft: 0 clientWidth: 1270 clientHeight: 43 attributeStyleMap: StylePropertyMap {size: 0} onbeforecopy: null onbeforecut: null onbeforepaste: null onsearch: null elementTiming: "" previousElementSibling: null nextElementSibling: script children: HTMLCollection [] firstElementChild: null lastElementChild: null childElementCount: 0 onfullscreenchange: null onfullscreenerror: null onwebkitfullscreenchange: null onwebkitfullscreenerror: null nodeType: 1 nodeName: "H1" baseURI: "file:///C:/Users/lg/Documents/Git/js-basic/index.html" isConnected: true ownerDocument: document parentNode: body parentElement: body childNodes: NodeList [text] firstChild: text lastChild: text previousSibling: text nextSibling: text nodeValue: null textContent: "Hi! From JS" proto: HTMLHeadingElement
+
+document 객체를 지정하는 방법
+- const title = document.getElementById("title");
+- const title2 = document.querySelector("#title");
+
+### #2-4. Events and event handlers
+자바스크립트가 이벤트에 반응하는 방법
+이벤트란? 웹에서 발생하는 모든 것 ex. click, resize, submit
+
+- addEventListener
+  - window.addEventListener("resize", handleResize()); -> 즉시 handleResize 함수 호출
+  - window.addEventListener("resize", handleResize); // 이벤트가 발생한 시점에서 handleResize 함수 호출
+
+- function handleResizeAuto -> 이벤트 발생할때마다 이벤트의 정보 출력
+  function handleResizeAuto(event){
+    console.log(event);
+  }
+- function handleClick -> 이벤트로 객체 제어
+  function handleClick(){
+    title.style.color = "blue";
+  }
+  title.addEventListener("click", handleClick);
