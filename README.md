@@ -131,7 +131,8 @@ document 객체를 지정하는 방법
 ### #2-6. DOM If else Function practice 1
 클릭 이벤트마다 글씨색 바꾸는 코드
 
-\`const title = document.querySelector("#title");
+<pre><code>
+const title = document.querySelector("#title");
 
 const BASE_COLOR = "rgb(52, 73, 94)";
 const OTHER_COLOR = "#fab1a0";
@@ -151,4 +152,5 @@ function init(){
   title.addEventListener("click", handleClick);
 }
 
-init();\`
+init();
+</code></pre>
