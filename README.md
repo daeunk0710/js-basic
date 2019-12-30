@@ -86,4 +86,178 @@ console.log(console) 해보면?
   -> console.log 는 console 이라는 object 의 log 라는 함수를 사용하는 것
 
 '' "" ``
-Grave Accent(``): 변수와 문자열을 함께 사용 가능
+Grave Accent: 변수와 문자열을 함께 사용 가능
+
+### #2-2. JS DOM Functions
+document: html 문서의 정보를 담은 object
+console.log(document) -> 해당 문서의 정보를 보여줌
+
+DOM(Document Object Model)!
+자바스크립트는 html 문서를 객체로 만든다
+이 객체를 통해 html 문서 제어 가능
+ex. title.innerHTML() 함수로 title 객체의 내용을 변경
+
+### #2-3. Modifying the DOM with JS
+console.dir(title) -> title 객체로 할 수 있는 모든 걸
+
+  h1#title
+  align: ""
+  title: ""
+  lang: ""
+  translate: true
+  dir: ""
+  hidden: false
+  accessKey: ""
+  draggable: false
+  spellcheck: true
+  autocapitalize: ""
+  contentEditable: "inherit"
+  isContentEditable: false
+  inputMode: ""
+  offsetParent: body
+  offsetTop: 21
+  offsetLeft: 8
+  offsetWidth: 1270
+  offsetHeight: 43
+  style: CSSStyleDeclaration {alignContent: "", alignItems: "", alignSelf: "", alignmentBaseline: "", all: "", …}
+  innerText: "Hi! From JS"
+  outerText: "Hi! From JS"
+  oncopy: null
+  oncut: null
+  onpaste: null
+  onabort: null
+  onblur: null
+  oncancel: null
+  oncanplay: null
+  oncanplaythrough: null
+  onchange: null
+  onclick: null
+  onclose: null
+  oncontextmenu: null
+  oncuechange: null
+  ondblclick: null
+  ondrag: null
+  ondragend: null
+  ondragenter: null
+  ondragleave: null
+  ondragover: null
+  ondragstart: null
+  ondrop: null
+  ondurationchange: null
+  onemptied: null
+  onended: null
+  onerror: null
+  onfocus: null
+  oninput: null
+  oninvalid: null
+  onkeydown: null
+  onkeypress: null
+  onkeyup: null
+  onload: null
+  onloadeddata: null
+  onloadedmetadata: null
+  onloadstart: null
+  onmousedown: null
+  onmouseenter: null
+  onmouseleave: null
+  onmousemove: null
+  onmouseout: null
+  onmouseover: null
+  onmouseup: null
+  onmousewheel: null
+  onpause: null
+  onplay: null
+  onplaying: null
+  onprogress: null
+  onratechange: null
+  onreset: null
+  onresize: null
+  onscroll: null
+  onseeked: null
+  onseeking: null
+  onselect: null
+  onstalled: null
+  onsubmit: null
+  onsuspend: null
+  ontimeupdate: null
+  ontoggle: null
+  onvolumechange: null
+  onwaiting: null
+  onwheel: null
+  onauxclick: null
+  ongotpointercapture: null
+  onlostpointercapture: null
+  onpointerdown: null
+  onpointermove: null
+  onpointerup: null
+  onpointercancel: null
+  onpointerover: null
+  onpointerout: null
+  onpointerenter: null
+  onpointerleave: null
+  onselectstart: null
+  onselectionchange: null
+  onanimationend: null
+  onanimationiteration: null
+  onanimationstart: null
+  ontransitionend: null
+  dataset: DOMStringMap {}
+  nonce: ""
+  autofocus: false
+  tabIndex: -1
+  enterKeyHint: ""
+  onformdata: null
+  onpointerrawupdate: null
+  namespaceURI: "http://www.w3.org/1999/xhtml"
+  prefix: null
+  localName: "h1"
+  tagName: "H1"
+  id: "title"
+  className: ""
+  classList: DOMTokenList [value: ""]
+  slot: ""
+  part: DOMTokenList [value: ""]
+  attributes: NamedNodeMap {0: id, id: id, length: 1}
+  shadowRoot: null
+  assignedSlot: null
+  innerHTML: "Hi! From JS"
+  outerHTML: "<h1 id="title">Hi! From JS</h1>"
+  scrollTop: 0
+  scrollLeft: 0
+  scrollWidth: 1270
+  scrollHeight: 43
+  clientTop: 0
+  clientLeft: 0
+  clientWidth: 1270
+  clientHeight: 43
+  attributeStyleMap: StylePropertyMap {size: 0}
+  onbeforecopy: null
+  onbeforecut: null
+  onbeforepaste: null
+  onsearch: null
+  elementTiming: ""
+  previousElementSibling: null
+  nextElementSibling: script
+  children: HTMLCollection []
+  firstElementChild: null
+  lastElementChild: null
+  childElementCount: 0
+  onfullscreenchange: null
+  onfullscreenerror: null
+  onwebkitfullscreenchange: null
+  onwebkitfullscreenerror: null
+  nodeType: 1
+  nodeName: "H1"
+  baseURI: "file:///C:/Users/lg/Documents/Git/js-basic/index.html"
+  isConnected: true
+  ownerDocument: document
+  parentNode: body
+  parentElement: body
+  childNodes: NodeList [text]
+  firstChild: text
+  lastChild: text
+  previousSibling: text
+  nextSibling: text
+  nodeValue: null
+  textContent: "Hi! From JS"
+  __proto__: HTMLHeadingElement
