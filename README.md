@@ -1,7 +1,10 @@
 # js-basic
 Follow JS Basic lecture of Nomad Coders https://youtu.be/ygVeQEgxm4o
+- JS Examples
 - Momentum Clone Coding
+- Game
 
+## JS Examples
 ### #1-6. variables
 자바스크립트는 문법에 엄격하지 않음. 나쁜 문법도 동작
 변수 사용법: create -> initialize -> use
@@ -49,6 +52,8 @@ const myInfo = {
 
 Combine Arrays & Objects
 배열 안에 객체 or 객체 안에 배열 가능!
+
+<hr/>
 
 ### #2-1. Function
 console.log(console) 해보면?
@@ -236,3 +241,25 @@ html, css, js 코드를 분리 -> 각자 제 역할을 하게 하자
 
   init();
   </pre></code>
+
+<hr/>
+
+## Momentum Clone Coding
+### #3-1. Clock 1
+- getTime(): Date 객체 생성해서 현재 시간 받아오기, clockTitle 값 바꾸기
+- init(): 초기화
+
+### #3-2. Clock 2
+새로고침 하지 않아도 갱신되는 시계 만들기
+- setInterval(): 간격을 정해주면 그 시간마다 getTime() 실행
+
+시계 형식 갖추기 00:00:00
+- ternary operator(삼항연산자): 간소화된 if문
+
+### #3-3. Saving the User Name 1
+- Local Storage: 작은 정보를 브라우저에 저장하는 방식. 안드로이드의 shared Preference 같은 느낌
+- paintGreeting(): local storage 에 이름이 있을 때 실행. 그 값을 보여주는 함수
+- loadName(): local storage 에서 이름이 있으면 가져오는 함수
+- init()
+
+### #3-4. Saving the User Name 2
