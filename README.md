@@ -49,3 +49,41 @@ const myInfo = {
 
 Combine Arrays & Objects
 배열 안에 객체 or 객체 안에 배열 가능!
+
+### #2-1. Function
+console.log(console) 해보면?
+  console {debug: ƒ, error: ƒ, info: ƒ, log: ƒ, warn: ƒ, …}
+  memory: (...)
+  debug: ƒ debug()
+  error: ƒ error()
+  info: ƒ info()
+  log: ƒ log()
+  warn: ƒ warn()
+  dir: ƒ dir()
+  dirxml: ƒ dirxml()
+  table: ƒ table()
+  trace: ƒ trace()
+  group: ƒ group()
+  groupCollapsed: ƒ groupCollapsed()
+  groupEnd: ƒ groupEnd()
+  clear: ƒ clear()
+  count: ƒ count()
+  countReset: ƒ countReset()
+  assert: ƒ assert()
+  profile: ƒ profile()
+  profileEnd: ƒ profileEnd()
+  time: ƒ time()
+  timeLog: ƒ timeLog()
+  timeEnd: ƒ timeEnd()
+  timeStamp: ƒ timeStamp()
+  context: ƒ context()
+  Symbol(Symbol.toStringTag): "Object"
+  get memory: ƒ ()
+  set memory: ƒ ()
+  __proto__: Object
+
+  -> console 도 하나의 object!
+  -> console.log 는 console 이라는 object 의 log 라는 함수를 사용하는 것
+
+'' "" ``
+Grave Accent(``): 변수와 문자열을 함께 사용 가능
