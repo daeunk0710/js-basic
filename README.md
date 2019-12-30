@@ -154,3 +154,85 @@ function init(){
 
 init();
 </code></pre>
+
+### #2-7. DOM If else Function practice 2
+html, css, js 코드를 분리 -> 각자 제 역할을 하게 하자
+
+#### index.css
+  <pre><code>
+  body{
+    background-color: tomato;
+  }
+
+  h1{
+    color:#fab1a0;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .clicked {
+    color: #7f8c8d;
+  }
+  </pre></code>
+
+#### index.js
+- ver1. 태그에 다른 class 가 할당되어 있는 경우 제대로 동작하지 않음
+  <pre><code>
+  const title = document.querySelector("#title");
+
+  const CLICKED_CLASS = "clicked";
+
+  function handleClick(){
+    const currentClass = title.className;
+    console.log(currentClass);
+    if (currentClass !== CLICKED_CLASS){
+      title.className = CLICKED_CLASS;
+    } else {
+      title.className = "";
+    }
+  }
+
+  function init(){
+    title.addEventListener("click", handleClick);
+  }
+
+  init();
+  </pre></code>
+
+- ver2. 코드 개선: classList 를 사용해 태그가 가지고 있는 클래스를 고려
+  <pre><code>
+  const title = document.querySelector("#title");
+
+  const CLICKED_CLASS = "clicked";
+
+  function handleClick(){
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    if (!hasClass){
+      title.classList.add(CLICKED_CLASS);
+    } else {
+      title.classList.remove(CLICKED_CLASS);
+    }
+  }
+
+  function init(){
+    title.addEventListener("click", handleClick);
+  }
+
+  init();
+  </pre></code>
+
+- ver3. Toggle 적용
+  <pre><code>
+  const title = document.querySelector("#title");
+
+  const CLICKED_CLASS = "clicked";
+
+  function handleClick(){
+    title.classList.toggle(CLICKED_CLASS);
+  }
+
+  function init(){
+    title.addEventListener("click", handleClick);
+  }
+
+  init();
+  </pre></code>
