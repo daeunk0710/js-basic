@@ -293,5 +293,22 @@ todo 삭제하기 구현
 - filterFn(): array 의 모든 item 에 대해 filter 실행, true 인 item 만 가지고 새로운 array 생성
 
 ### #3-8. Image Background
+- paintImage(): 배경 이미지 지정
 - getRandom(): Math.random 활용해서 랜덤 숫자 생성
 - init(): 초기화, getRandom() 호출
+
+### #3-9. Getting the Weather - Geolocation
+- saveCoords(): local storage 에 latitude longitude 저장(JSON 사용)
+- handleGeoSuccess(): position 받아서 위도 경도 정보 갖는 coordsObj 객체 생성
+- handleGeoError()
+- askForCoords(): 좌표 요청하는 함수. navigatior API 사용
+- loadCoords(): local storage 에서 COORDS 받아와서 날씨 정보 얻기. 없으면 askForCoords 호출.
+- init(): 초기화, loadCoords() 호출
+
+### #3-10. Getting the Weather - API
+Open Weather Map API 사용
+자바스크립트는 웹사이트로 Request 를 보내고 Response 를 통해서 데이터를 얻는다. 특별한 점은 가져온 데이터를 Refresh 없이도 웹사이트에 적용시킬 수 있다는 것!
+JS 가 보이지 않는 곳에서 계속 데이터를 갱신함
+
+- getWeather(): API 사용해서 날씨 가져오는 함수
+  - fetch().then(function()) -> fetch 완료 후 function() 실행
