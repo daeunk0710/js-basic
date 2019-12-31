@@ -291,3 +291,7 @@ todo 삭제하기 구현
 - deleteTodo(): 삭제 버튼 누르면 todo 리스트에서 제거하는 함수
   - event.target: 이벤트가 실행되는 특정 element 를 타겟
 - filterFn(): array 의 모든 item 에 대해 filter 실행, true 인 item 만 가지고 새로운 array 생성
+
+### #3-8. Image Background
+- getRandom(): Math.random 활용해서 랜덤 숫자 생성
+- init(): 초기화, getRandom() 호출
