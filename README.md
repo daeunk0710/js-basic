@@ -270,7 +270,24 @@ html, css, js 코드를 분리 -> 각자 제 역할을 하게 하자
 ### #3-5. To Do List 1
 - paintTodo(): 입력받은 todo 값으로 li 생성하는 함수
 - handleSubmit(): form 입력받아서 paintTodo 로 넘기는 함수
-- loadTodos(): local storage 에 이름이 있을 때 실6
+- loadTodos(): local storage 에 todos 있을 때 실행
 - init(): 초기화. loadTodos() 호출
 
 ### #3-6. To Do List 2
+todo list 배열에 담아서 보여주기 구현 & local storage 에 저장하기
+- const todos = [];
+- const todoObj = {
+    text: text,
+    id: todos.length + 1
+  }
+- saveTodos(): local storage 에 todos 저장
+  - local storage 는 문자열만 저장 가능! JSON.stringify 사용해서 객체를 문자열로 변환
+- loadTodos(): local storage 에서 todos 받아와서 보여주기
+  - JSON.parse 사용해서 문자열을 객체로 변환
+  - forEach
+
+### #3-7. To Do List 3
+todo 삭제하기 구현
+- deleteTodo(): 삭제 버튼 누르면 todo 리스트에서 제거하는 함수
+  - event.target: 이벤트가 실행되는 특정 element 를 타겟
+- filterFn(): array 의 모든 item 에 대해 filter 실행, true 인 item 만 가지고 새로운 array 생성
