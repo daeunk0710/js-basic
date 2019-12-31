@@ -257,13 +257,20 @@ html, css, js 코드를 분리 -> 각자 제 역할을 하게 하자
 - ternary operator(삼항연산자): 간소화된 if문
 
 ### #3-3. Saving the User Name 1
-Local Storage: 작은 정보를 브라우저에 저장하는 방식. 안드로이드의 shared Preference 같은 느낌. url 기반으로 작동함.
-
+- Local Storage: 작은 정보를 브라우저에 저장하는 방식. 안드로이드의 shared Preference 같은 느낌. url 기반으로 작동함.
 - paintGreeting(): local storage 에 이름이 있을 때 실행. 그 값을 보여주는 함수
 - loadName(): local storage 에서 이름이 있으면 가져오는 함수
-- init()
+- init(): 초기화. loadNmae() 호출
 
 ### #3-4. Saving the User Name 2
 - askForName(): local storage 에 이름이 없을 때 실행. form 보여주고 submit 이벤트에 발생 시 handleSubmit() 호출하는 함수
 - handleSubmit(): form 입력값을 받아서 paintGreeting, saveName 으로 넘기는 함수
 - saveName(): local storage 에 이름을 저장하는 함수
+
+### #3-5. To Do List 1
+- paintTodo(): 입력받은 todo 값으로 li 생성하는 함수
+- handleSubmit(): form 입력받아서 paintTodo 로 넘기는 함수
+- loadTodos(): local storage 에 이름이 있을 때 실6
+- init(): 초기화. loadTodos() 호출
+
+### #3-6. To Do List 2
